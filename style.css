@@ -1,0 +1,282 @@
+
+header {
+  background-color: #ffbafc; 
+  padding: 20px;
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 12px;
+  font-weight: bold;
+  color: #0e0d0d; 
+  text-align: center;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;     
+  padding: 20px 40px;
+  gap: 20px;
+  box-shadow: 0 0 25px #ffb9ff80;
+  flex-wrap: wrap;             
+  background-color: #FAF5FF;
+}
+
+
+.header-top .logo img {
+  width: 200px;                 
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.logo img {
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.header-top .logo img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+.header-top h1 {
+  font-family: 'Lucida Handwriting', cursive;
+  font-size: 36px;
+  color: #070707;
+  margin: 0;
+}
+
+.welcome-video {
+  display: flex;
+  justify-content: center;       
+  margin: 30px 0;                
+}
+
+
+body {
+  background-color: #f3d6e1; 
+  color: #070707;             
+  font-family: 'Lucida Handwriting', cursive;
+  padding: 20px;              
+  margin: 0;    
+}
+
+main, section, form, table {
+  background: linear-gradient(to bottom, #FAF5FF, #F3E8FF);
+  padding: 20px;
+  border-radius: 10px;
+}
+.highlight-sueellen {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 20px;
+  color: #070707;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.highlight {
+  font-family: 'Lucida Handwriting', cursive;
+  font-size: 15px;
+  color: #070707;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+
+nav a {
+  display: inline-block;
+  margin: 0 15px;
+  font-family: 'Chewy', cursive;
+  font-weight: bold;
+  color: #fc3e9d;
+  text-decoration: none;
+  font-size: 18px;
+}
+nav a:hover {
+  color: #ec97c5;
+}
+
+h1 {
+  font-family: 'lucida Handwriting', cursive; 
+  font-size: 30px;
+  color: #ff1493;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'Lucida Handwriting', cursive; 
+  font-size: 30px;
+  color: #ff1493;
+  margin: 20px 0;
+  font-weight: normal;
+}
+h3 {
+  font-family: 'Lucida Handwriting', cursive; 
+  font-size: 40px;
+  color: #ff1493;
+  margin: 20px 0;
+  font-weight: normal;
+  text-align: center
+}
+
+ul, ol {
+  font-family: 'Lucida Handwriting', cursive; 
+}
+table {
+  font-family: 'Lucida Handwriting', cursive; 
+  font-size: 16px;
+  border-collapse: collapse; 
+  width: 60%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+
+table, th, td {
+  border: 2px solid #f5bff0; 
+  padding: 4px;
+  text-align: left;
+}
+
+
+caption {
+  font-family: 'Lucida Handwriting', cursive;
+  font-size: 18px;
+  color: #ff1493; 
+  margin-bottom: 6px;
+}
+
+
+thead th {
+  background-color: #6a5a8c; 
+  font-weight: normal;
+}
+
+tbody tr:nth-child(1) { background-color: #836FA3; color: #070707; } 
+tbody tr:nth-child(2) { background-color: #9D89B9; color: #070606; } 
+tbody tr:nth-child(3) { background-color: #B9A4CF; color: #070707; } 
+tbody tr:nth-child(4) { background-color: #D5C1E5; color: #070707; } 
+tbody tr:nth-child(5) { background-color: #EFE0F7; color: #070707; }
+
+
+
+tfoot td {
+  background-color: #c696f7; 
+  color: white;
+}
+
+form {
+  max-width: 1200px;           
+  margin: 30px auto;           
+  padding: 20px;               
+  background-color: #F8F0FF;  
+  border: 5px solid #D1B3FF;  
+  border-radius: 10px;          
+  box-shadow: 0 4px 8px #DCC0FF; 
+  font-family: 'Lucida Handwriting', cursive; 
+  
+}form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form textarea {
+  width: 80%;
+  margin: 0 auto 12px auto;                
+  padding: 8px 10px;         
+  margin-bottom: 12px;        
+  border: 1px solid #C49BFF;  
+  border-radius: 5px;         
+  font-size: 16px;          
+  font-family: 'Lucida Handwriting', cursive; 
+  background-color: #F3E8FF;  
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Focus effect */
+form input:focus,
+form textarea:focus {
+  border-color: #8A2BE2;      
+  outline: none;
+  background-color: #EEDCFF; 
+} 
+
+form label {
+  display: block;             
+  margin-bottom: 6px;          
+  font-weight: bold;          
+  font-size: 16px;             
+  font-family: 'Lucida Handwriting', cursive; 
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+  vertical-align: middle;   
+  margin-right: 6px; 
+}
+form input[type="submit"] {
+  background-color: #8A2BE2;   
+  color: white;                  
+  padding: 10px 20px;          
+  border: none;             
+  border-radius: 6px;            
+  cursor: pointer;            
+  font-size: 16px;             
+  font-family: 'Lucida Handwriting', cursive; 
+  transition: background-color 0.3s ease; 
+}
+
+
+form input[type="submit"]:hover {
+  background-color: #A96BFF;     
+}
+
+footer {
+  width: 100%;                
+  padding: 20px;              
+  background-color: #F8F0FF;  
+  text-align: center;         
+  font-family: 'Lucida Handwriting', cursive; 
+  border-top: 2px solid #D1B3FF; 
+}
+
+
+footer a {
+  color: #8A2BE2;            
+  text-decoration: none;      
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #A96BFF;            
+}
+
+body {
+  background: linear-gradient(135deg, #fceaff, #ffe4f7, #f7d6ff);
+  background-size: 300% 300%;
+  animation: bgMove 12s ease infinite;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.side-deco {
+  position: fixed;
+  right: 10px;
+  top: 5%;
+  width: 150px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}

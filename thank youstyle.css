@@ -1,0 +1,229 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Handwriting', cursive;
+    background: linear-gradient(to bottom, #FAF5FF, #F3E8FF);
+    color: #070707;
+    overflow-x: hidden; 
+}
+
+
+.thankyou-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;  
+    text-align: center;
+    padding: 20px;
+    position: relative; 
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.thankyou-img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease forwards;
+    transition: transform 0.3s ease;
+}
+
+.thankyou-img:hover {
+    transform: scale(1.05) rotate(3deg);
+}
+
+
+.thankyou-container h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+
+.thankyou-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.6s;
+}
+
+
+.home-button {
+    text-decoration: none;
+    color: #FAF5FF;
+    background-color: #8A2BE2;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.9s;
+}
+
+.home-button:hover {
+    background-color: #A96BFF;
+    transform: scale(1.05);
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #8A2BE2; 
+    top: 0;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: fall linear infinite;
+}
+
+.confetti:nth-child(1) { left: 50%; animation-duration: 4s; animation-delay: 2s; background-color: #D6BBFF; }
+.confetti:nth-child(2) { left: 70%; animation-duration: 7s; animation-delay: 0.5s; background-color: #EAD6FF; }
+.confetti:nth-child(3) { left: 90%; animation-duration: 5.5s; animation-delay: 1.5s; background-color: #FAF0FF; }
+
+
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+
+.message-box {
+    background-color: #F3E8FF;     
+    border: 2px solid #8A2BE2;     
+    padding: 20px 30px;             
+    border-radius: 15px;            
+    max-width: 500px;               
+    margin: 20px auto;              
+    box-shadow: 0 4px 8px #D6BBFF;  
+    text-align: center;             
+    font-size: 18px;                
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.6s;
+}
+.thankyou-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;  
+    padding: 10px;             
+    box-sizing: border-box;
+}
+
+
+.thankyou-logo {
+    width: 200px;                
+    height: auto;
+}
+
+footer {
+  width: 100%;                
+  padding: 20px;              
+  background-color: #F8F0FF;  
+  text-align: center;         
+  font-family: 'Lucida Handwriting', cursive; 
+  border-top: 2px solid #D1B3FF; 
+}
+
+
+footer a {
+  color: #8A2BE2;            
+  text-decoration: none;      
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #A96BFF;            
+}
+
+@keyframes logoSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px) scale(0.8);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(10px) scale(1.05);
+    }
+    80% {
+        transform: translateX(-5px) scale(1);
+    }
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+
+.thankyou-logo {
+    width: 100px;
+    height: auto;
+    animation: logoSlideIn 1s ease forwards;
+}
+@keyframes boxSlideFade {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    80% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.message-box {
+    background-color: #F3E8FF;
+    border: 2px solid #8A2BE2;
+    padding: 20px 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px #D6BBFF;
+    text-align: center;
+    font-size: 18px;
+    animation: boxSlideFade 1s ease forwards;
+    animation-delay: 0.5s; 
+}
+@keyframes buttonPopIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.05) translateY(-5px);
+    }
+    80% {
+        transform: scale(0.95) translateY(2px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+.home-button {
+    text-decoration: none;
+    color: #FAF5FF;
+    background-color: #8A2BE2;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: buttonPopIn 1s ease forwards;
+    animation-delay: 1s; 
+}
+
+.home-button:hover {
+    background-color: #A96BFF;
+    transform: scale(1.1); 
+}

@@ -1,0 +1,145 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fcd4e8;
+    color: #333;
+}
+
+header {
+    background-color: #ffcbff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #332f33;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-style: italic;
+    color: #000000;
+    margin-top: 8px;
+}
+
+
+p {
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto 30px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    background-color: #fce0ff;
+    border-radius: 10px;
+
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #ff5cc1;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ea94fc;
+}
+
+/* Other Contact Section */
+section {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    background-color: #edbdfc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Email Button Styling */
+section ul li a {
+    text-decoration: none;
+    background-color: #f07fff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+section ul li a:hover {
+    background-color: #e066bb;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #efcbff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #58275a;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
